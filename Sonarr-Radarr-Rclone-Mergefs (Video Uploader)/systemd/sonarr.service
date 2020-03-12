@@ -1,0 +1,17 @@
+[Unit]
+Description=Sonarr Daemon
+Requires=gmedia.service
+Wants=network-online.target
+
+[Service]
+User=root
+Group=root
+
+Type=simple
+ExecStart=/usr/bin/mono /opt/Sonarr/Sonarr.exe --nobrowser
+TimeoutStopSec=20
+KillMode=process
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

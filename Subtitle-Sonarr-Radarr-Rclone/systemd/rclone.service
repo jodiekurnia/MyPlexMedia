@@ -1,0 +1,33 @@
+[Unit]
+Description=RClone Service
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=notify
+Environment=RCLONE_CONFIG=/root/.config/rclone/rclone.conf
+KillMode=none
+RestartSec=5
+ExecStart=/usr/bin/rclone mount gcrypt: /GD \
+--allow-other \
+--buffer-size 256M \
+--dir-cache-time 1000h \
+--log-level INFO \
+--log-file /root/rclone/logs/rclone.log \
+--poll-interval 15s \
+--timeout 1h \
+--umask 002 \
+--user-agent animosityapp \
+--rc \
+--rc-web-gui \
+--rc-user admin \
+--rc-pass 1sampai5 \
+--rc-serve \
+--rc-addr :5572 \
+ExecStop=/bin/fusermount -uz /GD
+Restart=on-failure
+User=root
+Group=root
+
+[Install]
+WantedBy=multi-user.target
