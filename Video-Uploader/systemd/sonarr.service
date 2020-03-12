@@ -8,7 +8,7 @@ User=root
 Group=root
 
 Type=simple
-ExecStart=/usr/bin/mono /opt/Sonarr/Sonarr.exe --nobrowser
+ExecStart=/usr/bin/mono /opt/NzbDrone/NzbDrone.exe --nobrowser
 TimeoutStopSec=20
 KillMode=process
 Restart=always

@@ -1,0 +1,28 @@
+[Unit]
+Description=Google Drive (rclone)
+AssertPathIsDirectory=/mnt/gdrive
+
+[Service]
+Type=simple
+Environment=RCLONE_CONFIG=/root/MyPlexMedia/Subtitle-Search/rclone.conf
+ExecStart=/usr/bin/rclone mount \
+	--allow-other \
+	--dir-cache-time 72h \
+	--cache-chunk-size=10M \
+	--cache-tmp-upload-path=/data/rclone_upload \
+	--cache-tmp-wait-time 1m \
+	--rc \
+	--rc-web-gui \
+	--rc-user=admin \
+	--rc-pass=1sampai5 \
+	--rc-serve \
+    --rc-addr=:5572 \
+    --log-level=INFO \
+	--log-file=/root/rclone.log \
+	PlexMedia:/ /mnt/gdrive
+ExecStop=/bin/fusermount -u /mnt/gdrive
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=default.target
