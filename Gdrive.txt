@@ -1,0 +1,36 @@
+Jodiekurnia1@smkn17-smr.sch.id	store1234
+Jodiekurnia2@smkn17-smr.sch.id	store1234
+Jodiekurnia3@smkn17-smr.sch.id	store1234
+Jodiekurnia4@smkn17-smr.sch.id	store1234
+Jodiekurnia5@smkn17-smr.sch.id	store1234
+Jodiekurnia6@smkn17-smr.sch.id	store1234
+Jodiekurnia7@smkn17-smr.sch.id	store1234
+Jodiekurnia8@smkn17-smr.sch.id	store1234
+Jodiekurnia9@smkn17-smr.sch.id	store1234
+Jodiekurnia10@smkn17-smr.sch.id	store1234
+Jodiekurnia11@smkn17-smr.sch.id	store1234 => ADON
+
+Terima kasih sudah berbelanja di Lapak ane gan.
+Berikut link file yang isinya data akun agan
+
+Mohon untuk review secepatnya 4 jam dr skrg agar dapat bonus tambahan.
+Bookmark Lapak ane di https://p-store.net/user/bnzryan untuk lapak Akun lainnya ya...
+Terima kasih bosque.
+
+client_id = 862318843773-hmbv0j5tg3maptdaqkm58j2rcukn3pqp.apps.googleusercontent.com
+client_secret = 1Ug-Oe_Mz1rDZbJhxPnhSKT9
+
+[gcrypt]
+type = crypt
+remote = GD:media
+filename_encryption = standard
+password = zoe_GE59Axp5M9Nyf9lcb3vPzykfoYr_7g
+directory_name_encryption = true
+
+[GD]
+type = drive
+client_id = 862318843773-hmbv0j5tg3maptdaqkm58j2rcukn3pqp.apps.googleusercontent.com
+client_secret = 1Ug-Oe_Mz1rDZbJhxPnhSKT9
+scope = drive
+token = {"access_token":"ya29.a0Ae4lvC1aRAuXWAQkrUMzgL6jd-AI5C3_BhAH6fUbEZCnxFT87Gfl5E4KwBbdsI6cPxQiy5LiThfU-XP7BXHeUHeAoUuAc7p4RMWWFtvm648iwA5xrOx9hKJIahBeEzUCGuhPiRwELUSJFg5sOrAv8uGwu89_sfQNvTI","token_type":"Bearer","refresh_token":"1//05sEAmFtlLPbTCgYIARAAGAUSNwF-L9IrlC_hOv1GIHExur3cv4eJMdU7EGst79PfhRkdYR540L-sNNTQSgEGIYbBhZ90AegJwzY","expiry":"2020-05-03T07:39:31.129790044Z"}
+root_folder_id = 0AJTHEUzYWrq0Uk9PVA

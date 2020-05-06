@@ -1,0 +1,13 @@
+[Unit]
+Description=Plexdrive
+AssertPathIsDirectory=/mnt/media
+After=network-online.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/plexdrive mount -v 2 /mnt/media
+ExecStop=/bin/fusermount -u /mnt/media
+Restart=on-abort
+
+[Install]
+WantedBy=default.target
