@@ -6,7 +6,7 @@ After=plexdrive.service
 [Service]
 Type=simple
 ExecStart=/usr/bin/rclone mount --allow-other gcrypt: /mnt/gdrive
-ExecStop=/bin/fusermount -u /mnt/gdrive
+ExecStop=/bin/fusermount -uz /mnt/gdrive
 Restart=on-abort
 
 [Install]
