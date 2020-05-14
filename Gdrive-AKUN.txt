@@ -1,5 +1,5 @@
-Jodiekurnia1@smkn17-smr.sch.id	store1234
-Jodiekurnia2@smkn17-smr.sch.id	store1234
+Jodiekurnia1@smkn17-smr.sch.id	store1234 => TV & Movie
+Jodiekurnia2@smkn17-smr.sch.id	store1234 => Anime
 Jodiekurnia3@smkn17-smr.sch.id	store1234
 Jodiekurnia4@smkn17-smr.sch.id	store1234
 Jodiekurnia5@smkn17-smr.sch.id	store1234
