@@ -19,7 +19,7 @@ ExecStart=/usr/bin/rclone mount \
     --rc-addr=:5572 \
     --log-level=INFO \
 	--log-file=/root/rclone.log \
-	PlexMedia:/ /mnt/gdrive
+	gcrypt:/ /mnt/gdrive
 ExecStop=/bin/fusermount -u /mnt/gdrive
 Restart=always
 RestartSec=10

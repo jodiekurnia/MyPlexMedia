@@ -7,4 +7,4 @@ export RCLONE_CONFIG
 if [[ "`pidof -x $(basename $0) -o %PPID`" ]]; then exit; fi
 
 # Move older local files to the cloud
-/usr/bin/rclone move /local/TV\ Shows/ gcrypt:TV\ Shows/ --log-file /root/rclone/logs/upload.log -v --exclude-from /root/rclone/excludes --delete-empty-src-dirs --user-agent animosityapp --fast-list
+/usr/bin/rclone move /mnt/storage/local/TV\ Shows/ gcrypt:TV\ Shows/ --log-file /root/rclone/logs/upload.log -v --exclude-from /root/rclone/excludes  --user-agent animosityapp --fast-list --max-transfer 31G--transfers 1

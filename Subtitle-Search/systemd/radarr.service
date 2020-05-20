@@ -24,20 +24,3 @@ Restart=on-failure
 
 [Install]
 WantedBy=multi-user.target
-root@ip-172-31-23-116:~# cat /lib/systemd/system/sonarr.service 
-[Unit]
-Description=Sonarr Daemon
-After=syslog.target network.target
-
-[Service]
-User=root
-Group=root
-
-Type=simple
-ExecStart=/usr/bin/mono --debug /opt/NzbDrone/NzbDrone.exe -nobrowser
-TimeoutStopSec=20
-KillMode=process
-Restart=on-failure
-
-[Install]
-WantedBy=multi-user.target
